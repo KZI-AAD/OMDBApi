@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         HashMap<String, String> queryParams = new HashMap<>();
         queryParams.put("apikey", "VAS OMDBAPI KLJUC!");
         queryParams.put("s", query);
-        queryParams.put("page", "35");
 
         Call<OMDBResponse> call = OMDBApiService.apiInterface().searchOMDB(queryParams);
         call.enqueue(new Callback<OMDBResponse>() {
