@@ -24,6 +24,4 @@ public class OMDBApiService {
         OMDBApiEndpoint apiService = getRetrofitInstance().create(OMDBApiEndpoint.class);
         return apiService;
     }
-
-
 }
